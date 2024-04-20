@@ -1,0 +1,34 @@
+{
+  "name": "@lopesgabriel/desafio-ambiente-docker",
+  "version": "1.0.0",
+  "description": "Resolução do desafio Configuração  de Ambiente com Docker Compose da Rocketseat",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "vitest run",
+    "start:dev": "tsx watch src/index.ts",
+    "prepare-db": "prisma migrate deploy && prisma generate"
+  },
+  "keywords": [
+    "Rocketseat",
+    "Docker",
+    "Fastify",
+    "Prisma"
+  ],
+  "author": "Gabriel de Oliveira Lopes",
+  "license": "ISC",
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^2.2.2",
+    "@types/node": "^20.12.7",
+    "eslint": "^8.57.0",
+    "prisma": "^5.12.1",
+    "tsx": "^4.7.2",
+    "typescript": "^5.4.5",
+    "vite-tsconfig-paths": "^4.3.2",
+    "vitest": "^1.5.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.12.1",
+    "fastify": "^4.26.2",
+    "zod": "^3.22.5"
+  }
+}
