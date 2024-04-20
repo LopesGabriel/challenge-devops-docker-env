@@ -34,3 +34,23 @@ have to do is update the file at `pg/init-user-db.sh` with desired configuration
 It's possible to build the image, start the app container and a database container
 by running the compose file with `docker compose up --build`, optionally you
 can add `-d` arg to run it in detached mode
+
+#### Create a note
+
+```sh
+curl -i http://localhost:3000 \
+-X POST -H 'Content-Type: application/json' \
+-d '{"title": "Note Title", "content": "Note content"}'
+```
+
+#### List all notes
+
+```sh
+curl -i http://localhost:3000
+```
+
+#### Get note by id
+
+```sh
+curl -i http://localhost:3000/{note_id}
+```
