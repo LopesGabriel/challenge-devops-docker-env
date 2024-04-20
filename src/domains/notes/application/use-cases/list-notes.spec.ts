@@ -1,6 +1,6 @@
-import { InMemoryNotesRepository } from '@test/repositories/in-memory-notes-repository'
+import { InMemoryNotesRepository } from '@/test/repositories/in-memory-notes-repository'
 import { ListNotesUseCase } from './list-notes'
-import { Note } from '@notes/enterprise/entities/note'
+import { Note } from '@/notes/enterprise/entities/note'
 
 describe('List Notes Use Case', () => {
   let notesRepository: InMemoryNotesRepository

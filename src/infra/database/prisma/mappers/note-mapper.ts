@@ -1,5 +1,5 @@
-import { UniqueEntityId } from '@core/entities/unique-entity-id'
-import { Note } from '@notes/enterprise/entities/note'
+import { UniqueEntityId } from '@/core/entities/unique-entity-id'
+import { Note } from '@/notes/enterprise/entities/note'
 import { Note as PrismaNote, Prisma } from '@prisma/client'
 
 export class NotePrismaMapper {

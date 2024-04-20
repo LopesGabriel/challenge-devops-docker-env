@@ -1,4 +1,4 @@
-import { Note } from '@notes/enterprise/entities/note'
+import { Note } from '@/notes/enterprise/entities/note'
 import { NotesRepository } from '../repositories/notes-repository'
 
 interface ExecuteProps {

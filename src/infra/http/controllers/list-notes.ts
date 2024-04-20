@@ -1,7 +1,7 @@
 import { PrismaNotesRepository } from '../../database/prisma/repositories/prisma-notes-repository'
 import { FastifyHandler } from '../fastify-handler'
 import { NotePresenter } from './presenters/note-presenter'
-import { ListNotesUseCase } from '@notes/application/use-cases/list-notes'
+import { ListNotesUseCase } from '@/notes/application/use-cases/list-notes'
 
 const notesRepository = new PrismaNotesRepository()
 const listNoteUseCase = new ListNotesUseCase(notesRepository)

@@ -15,6 +15,18 @@ services:
     networks:
       - db-network
 
+  api:
+    build:
+      context: .
+    ports:
+      - 3000:3000
+    environment:
+      - DATABASE_URL=postgresql://rocketseat:ch4ll3nge4d3v0ps@database:5432/challenge?schema=public
+    networks:
+      - db-network
+    depends_on:
+      - database
+
 volumes:
   db:
 

@@ -1,4 +1,4 @@
-import { Note } from '@notes/enterprise/entities/note'
+import { Note } from '@/notes/enterprise/entities/note'
 
 export class NotePresenter {
   static toHTTP(note: Note) {

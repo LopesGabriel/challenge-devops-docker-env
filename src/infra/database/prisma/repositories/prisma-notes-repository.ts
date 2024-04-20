@@ -1,6 +1,6 @@
-import { UniqueEntityId } from '@core/entities/unique-entity-id'
-import { NotesRepository } from '@notes/application/repositories/notes-repository'
-import { Note } from '@notes/enterprise/entities/note'
+import { UniqueEntityId } from '@/core/entities/unique-entity-id'
+import { NotesRepository } from '@/notes/application/repositories/notes-repository'
+import { Note } from '@/notes/enterprise/entities/note'
 import { dbClient } from '../client'
 import { NotePrismaMapper } from '../mappers/note-mapper'
 

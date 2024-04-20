@@ -1,4 +1,4 @@
-import { UniqueEntityId } from '@core/entities/unique-entity-id'
+import { UniqueEntityId } from '@/core/entities/unique-entity-id'
 import { NotesRepository } from '../repositories/notes-repository'
 
 interface ExecuteProps {

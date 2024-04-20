@@ -1,5 +1,5 @@
-import { UniqueEntityId } from '@core/entities/unique-entity-id'
-import { Note } from '@notes/enterprise/entities/note'
+import { UniqueEntityId } from '@/core/entities/unique-entity-id'
+import { Note } from '@/notes/enterprise/entities/note'
 
 export interface NotesRepository {
   create(note: Note): Promise<Note>

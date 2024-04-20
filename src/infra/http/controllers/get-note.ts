@@ -1,4 +1,4 @@
-import { GetNoteUseCase } from '@notes/application/use-cases/get-note'
+import { GetNoteUseCase } from '@/notes/application/use-cases/get-note'
 import { PrismaNotesRepository } from '../../database/prisma/repositories/prisma-notes-repository'
 import { FastifyHandler } from '../fastify-handler'
 import { z } from 'zod'

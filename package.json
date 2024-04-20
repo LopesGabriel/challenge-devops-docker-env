@@ -6,7 +6,9 @@
   "scripts": {
     "test": "vitest run",
     "start:dev": "tsx watch src/index.ts",
-    "prepare-db": "prisma migrate deploy && prisma generate"
+    "start:prod": "prisma migrate deploy && node .",
+    "db:generate": "prisma generate",
+    "build": "tsup src/index.ts --out-dir dist"
   },
   "keywords": [
     "Rocketseat",
@@ -29,6 +31,7 @@
   "dependencies": {
     "@prisma/client": "^5.12.1",
     "fastify": "^4.26.2",
+    "tsup": "^8.0.2",
     "zod": "^3.22.5"
   }
 }
